@@ -10,7 +10,14 @@
     "compile": "rm -rf dist",
     "build": "rimraf dist && npx rollup -c"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuruddhhit07/chartpakage.git"
+  },
+  "keywords": [
+    "yarn add H:\\setup\testnpm>yarn add git+https://github.com/anuruddhhit07/chartpakage.git"
+  ],
+  
   "author": "",
   "license": "ISC",
   "devDependencies": {
