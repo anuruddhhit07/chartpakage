@@ -10,4 +10,5 @@ export default defineConfig({
     name: "pack-to-ui",
   },
   plugins: [typescript({ tsconfig: "tsconfig.json" })],
+  external: ['d3']
 });

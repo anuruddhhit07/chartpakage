@@ -4,3 +4,4 @@
 // 	console.log(add);
 // }
 export * from "./mathfn"
+export * from "./chartsvg/createchart";

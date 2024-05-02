@@ -4,6 +4,7 @@
       "module": "ESNext",
       "declaration": true,
       "declarationDir": "dist",
-      "strict": true
+      "strict": true,
+      "moduleResolution":"node",
     }
   }
