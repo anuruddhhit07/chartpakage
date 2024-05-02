@@ -9,7 +9,7 @@ function add2(a, b) {
 
 var A = [6, 2, 8, 8, 0, 0, 3, 9, 4, 4];
 var B = [2, 8, 4, 5, 3, 1, 6, 0, 0, 4];
-const intersection = d3.intersection(A, B);
+d3.intersection(A, B);
 function drawLineChart(data, divId) {
     const svgWidth = 400;
     const svgHeight = 200;
@@ -35,4 +35,4 @@ function drawLineChart(data, divId) {
         .attr("d", line);
 }
 
-export { add, add2, drawLineChart, intersection };
+export { add, add2, drawLineChart };
