@@ -1,5 +1,14 @@
-{
-"ohlcdata": [
+export interface OHLCV {
+	id:number,
+	ticker:string,
+	timestamp:number,
+    open: number;
+    high: number;
+    low: number;
+    close: number;
+    volume: number;
+}
+ export const ohlcdata:OHLCV[]=[
 	{
 		"id" : 393956,
 		"ticker" : "SBIN",
@@ -12640,4 +12649,4 @@
 		"close" : 759.29999,
 		"volume" : 15889530
 	}
-]}
+]

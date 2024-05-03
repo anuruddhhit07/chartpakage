@@ -1,5 +1,10 @@
-// Define an interface for OHLCV data
-interface OHLCV {
+
+import {ohlcdata} from "./testOHLC"
+
+export interface OHLCV {
+	id:number,
+	ticker:string,
+	timestamp:number,
     open: number;
     high: number;
     low: number;
@@ -7,17 +12,14 @@ interface OHLCV {
     volume: number;
 }
 
-// Import fs module to read JSON file
-import * as fs from 'fs';
 
 // Create a class to handle OHLCV data
-class OHLCVData {
-    private data: OHLCV[] = [];
+class TESTOHLCVDATA {
+    private data 
 
     // Load data from JSON file
-    constructor(filePath: string) {
-        const rawData = fs.readFileSync(filePath, 'utf-8');
-        this.data = JSON.parse(rawData);
+    constructor() {
+        this.data = ohlcdata;
     }
 
     // Method to fetch data for a specific range
@@ -30,17 +32,20 @@ class OHLCVData {
         return this.data.slice(-period);
     }
 
+    // Method to fetch data for a specific symbol
    
 }
 
-// Usage
-const ohlcvData = new OHLCVData('data.json');
+export default TESTOHLCVDATA
 
-// Fetch data for a specific range
-const rangeData = ohlcvData.getDataRange(0, 99);
+// // Usage
 
-// Fetch data for a specific time period
-const periodData = ohlcvData.getDataForPeriod(30);
+// const ohlcvData = new OHLCVData();
 
-// Fetch data for a specific symbol
+// // Fetch data for a specific range
+// const rangeData = ohlcvData.getDataRange(0, 99);
+
+// // Fetch data for a specific time period
+// const periodData = ohlcvData.getDataForPeriod(30);
+
 

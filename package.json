@@ -9,7 +9,8 @@
     "test": "npx jest",
     "compile": "rm -rf dist",
     "build": "rimraf dist && npx rollup -c",
-    "start": "npx ts-node src/testdata/testdataapi.ts"
+    "start": "npx ts-node src/index.ts",
+    "start0": "node dist/index.js"
   },
   "repository": {
     "type": "git",
